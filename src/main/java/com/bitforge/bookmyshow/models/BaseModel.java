@@ -1,12 +1,10 @@
 package com.bitforge.bookmyshow.models;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import java.util.Date;
 
-@Getter
-@Setter
+@Data
 public class BaseModel {
     private Long id;
     private Date createdOn;
