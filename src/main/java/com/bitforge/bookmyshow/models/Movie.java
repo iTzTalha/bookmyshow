@@ -1,11 +1,15 @@
 package com.bitforge.bookmyshow.models;
 
+import jakarta.persistence.Entity;
 import lombok.Data;
 
-import java.util.List;
-
 @Data
+@Entity(name = "movies")
 public class Movie extends BaseModel {
     private String name;
-    private List<String> actors;
+    //Movie : Actor
+    //1 : M
+    //M : 1
+    //@ManyToMany
+    //private List<String> actors;
 }
